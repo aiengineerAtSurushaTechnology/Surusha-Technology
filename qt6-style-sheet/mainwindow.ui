@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1128</width>
+    <height>732</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Images shows Here</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1128</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen_Style_Sheet"/>
+    <addaction name="actionTemplate"/>
+    <addaction name="actionSamples"/>
+    <addaction name="separator"/>
+    <addaction name="actionClose"/>
+    <addaction name="actionSave_Style_Sheet"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionSelect_All"/>
+    <addaction name="actionInsert_File"/>
+    <addaction name="actionSave_Edit_File"/>
+    <addaction name="actionSave_Image"/>
+    <addaction name="separator"/>
+    <addaction name="actionClear"/>
+    <addaction name="actionClear_Image"/>
+    <addaction name="separator"/>
+    <addaction name="actionToolbar"/>
+   </widget>
+   <widget class="QMenu" name="menuFunctions">
+    <property name="title">
+     <string>Functions</string>
+    </property>
+    <addaction name="actionUndo_Text"/>
+    <addaction name="actionRedo_Text"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionCut_Text"/>
+    <addaction name="actionCopy_Text"/>
+    <addaction name="actionPaste"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout_Software"/>
+    <addaction name="actionAbout_Qt"/>
+   </widget>
+   <widget class="QMenu" name="menuObjects">
+    <property name="title">
+     <string>Objects</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuStructures">
+    <property name="title">
+     <string>Structures</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuText">
+    <property name="title">
+     <string>Text</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuCurves">
+    <property name="title">
+     <string>Curves</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuColors">
+    <property name="title">
+     <string>Colors</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSearch">
+    <property name="title">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuFunctions"/>
+   <addaction name="menuObjects"/>
+   <addaction name="menuStructures"/>
+   <addaction name="menuText"/>
+   <addaction name="menuCurves"/>
+   <addaction name="menuColors"/>
+   <addaction name="menuSearch"/>
+   <addaction name="menuHelp"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionClose"/>
+   <addaction name="separator"/>
+   <addaction name="actionUndo_Text"/>
+   <addaction name="actionRedo_Text"/>
+   <addaction name="separator"/>
+   <addaction name="actionCut_Text"/>
+   <addaction name="actionCopy_Text"/>
+   <addaction name="actionPaste"/>
+   <addaction name="separator"/>
+   <addaction name="actionClear"/>
+   <addaction name="actionClear_Image"/>
+   <addaction name="separator"/>
+   <addaction name="actionSave_Style_Sheet"/>
+   <addaction name="actionSave_Edit_File"/>
+   <addaction name="actionSave_Image"/>
+   <addaction name="separator"/>
+   <addaction name="actionToolbar"/>
+  </widget>
+  <action name="actionOpen_Style_Sheet">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/Open Style Sheet.png</normaloff>:/images/Open Style Sheet.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open Style Sheet</string>
+   </property>
+  </action>
+  <action name="actionTemplate">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/Template.png</normaloff>:/images/Template.png</iconset>
+   </property>
+   <property name="text">
+    <string>Template</string>
+   </property>
+  </action>
+  <action name="actionSamples">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/Samples.png</normaloff>:/images/Samples.png</iconset>
+   </property>
+   <property name="text">
+    <string>Samples</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/quitIcon.png</normaloff>:/images/quitIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionSave_Style_Sheet">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/Save Style Sheet.png</normaloff>:/images/Save Style Sheet.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Style Sheet</string>
+   </property>
+  </action>
+  <action name="actionSelect_All">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/icons8-select-all-64.png</normaloff>:/images/icons8-select-all-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Select All</string>
+   </property>
+  </action>
+  <action name="actionInsert_File">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/Insert.png</normaloff>:/images/Insert.png</iconset>
+   </property>
+   <property name="text">
+    <string>Insert File</string>
+   </property>
+  </action>
+  <action name="actionToolbar">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/Toolbar.png</normaloff>:/images/Toolbar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Toolbar</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/Clear.png</normaloff>:/images/Clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </action>
+  <action name="actionClear_Image">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/Clear Image.png</normaloff>:/images/Clear Image.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear Image</string>
+   </property>
+  </action>
+  <action name="actionUndo_Text">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/undoIcon.png</normaloff>:/images/undoIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo Text</string>
+   </property>
+  </action>
+  <action name="actionRedo_Text">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/redoIcon.png</normaloff>:/images/redoIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo Text</string>
+   </property>
+  </action>
+  <action name="actionCut_Text">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/cutIcon.png</normaloff>:/images/cutIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut Text</string>
+   </property>
+  </action>
+  <action name="actionCopy_Text">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/copyIcon.png</normaloff>:/images/copyIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy Text</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/pasteIcon.png</normaloff>:/images/pasteIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste Text</string>
+   </property>
+  </action>
+  <action name="actionAbout_Software">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/aboutQtIcon.png</normaloff>:/images/aboutQtIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>About Software</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/aboutIcon.png</normaloff>:/images/aboutIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="actionSave_Edit_File">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/Save Text.png</normaloff>:/images/Save Text.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Text File</string>
+   </property>
+  </action>
+  <action name="actionSave_Image">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/images/Save Image.png</normaloff>:/images/Save Image.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Image </string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

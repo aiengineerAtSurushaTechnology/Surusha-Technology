@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/aboutIcon.png</file>
+        <file>images/aboutQtIcon.png</file>
+        <file>images/Clear Image.png</file>
+        <file>images/Clear.png</file>
+        <file>images/Close Style Sheet.png</file>
+        <file>images/copyIcon.png</file>
+        <file>images/cutIcon.png</file>
+        <file>images/icons8-select-all-64.png</file>
+        <file>images/Insert.png</file>
+        <file>images/Open Style Sheet.png</file>
+        <file>images/openIcon.png</file>
+        <file>images/pasteIcon.png</file>
+        <file>images/quitIcon.png</file>
+        <file>images/redoIcon.png</file>
+        <file>images/Samples.png</file>
+        <file>images/Save Image.png</file>
+        <file>images/Save Style Sheet.png</file>
+        <file>images/Save Text.png</file>
+        <file>images/Template.png</file>
+        <file>images/Toolbar.png</file>
+        <file>images/undoIcon.png</file>
+    </qresource>
+    <qresource prefix="/new/prefix1">
+        <file>Toolbar-Images/Circle.png</file>
+        <file>Toolbar-Images/Rectangle.png</file>
+        <file>Toolbar-Images/Rounded-rectangle-stroked-96.png</file>
+        <file>Toolbar-Images/Square.png</file>
+        <file>Toolbar-Images/Star.png</file>
+    </qresource>
+</RCC>
