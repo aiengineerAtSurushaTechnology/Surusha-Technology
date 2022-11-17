@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/rec">
+        <file>img/italic.png</file>
+        <file>img/redo.png</file>
+        <file>img/undo.png</file>
+        <file>img/bold.png</file>
+    </qresource>
+</RCC>
