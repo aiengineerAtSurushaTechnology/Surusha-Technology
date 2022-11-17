@@ -1,2 +1,1 @@
-It is the demo of mainwondow of the web app in this we demonstrate the rotation of the shapes which is very necessary in chemical anaysis. In chemical analysis we need to 
-view the data in 2d and 3d therefore it is necessary to rotate the shapes in the mainwindow. For better visualization.
+It is the demo of canvas of mainwondow of the web app in this we demonstrate the rotation of the shapes which is very necessary in chemical anaysis. In chemical analysis we need to view the data in 2d and 3d therefore it is necessary to rotate the shapes in the mainwindow. For better visualization.
